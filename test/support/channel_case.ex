@@ -1,4 +1,4 @@
-defmodule ExmealWeb.ChannelCase do
+defmodule MealsMonitorWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -11,7 +11,7 @@ defmodule ExmealWeb.ChannelCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use ExmealWeb.ChannelCase, async: true`, although
+  by setting `use MealsMonitorWeb.ChannelCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -21,18 +21,18 @@ defmodule ExmealWeb.ChannelCase do
     quote do
       # Import conveniences for testing with channels
       import Phoenix.ChannelTest
-      import ExmealWeb.ChannelCase
+      import MealsMonitorWeb.ChannelCase
 
       # The default endpoint for testing
-      @endpoint ExmealWeb.Endpoint
+      @endpoint MealsMonitorWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Exmeal.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(MealsMonitor.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Exmeal.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(MealsMonitor.Repo, {:shared, self()})
     end
 
     :ok

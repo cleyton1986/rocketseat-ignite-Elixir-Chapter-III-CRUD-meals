@@ -7,18 +7,16 @@
 # General application configuration
 use Mix.Config
 
-config :exmeal,
-  ecto_repos: [Exmeal.Repo]
-
-config :exmeal, Exmeal.Repo, migration_primary_key: [type: :binary_id]
+config :meals_monitor,
+  ecto_repos: [MealsMonitor.Repo]
 
 # Configures the endpoint
-config :exmeal, ExmealWeb.Endpoint,
+config :meals_monitor, MealsMonitorWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "NanyaNlpv99QO0Vr5rVwc3fw4dDvdOqKtbxoFd+8JTr9O+G+8TGTpZ2569U0NXC1",
-  render_errors: [view: ExmealWeb.ErrorView, accepts: ~w(json), layout: false],
-  pubsub_server: Exmeal.PubSub,
-  live_view: [signing_salt: "XotZZ9EH"]
+  secret_key_base: "gOcMyifc25S8B9rt1JTpHsO367MZDdF5sJtJvmuwW1GFdrNsQPMo7EEuLddJ5NXV",
+  render_errors: [view: MealsMonitorWeb.ErrorView, accepts: ~w(json), layout: false],
+  pubsub_server: MealsMonitor.PubSub,
+  live_view: [signing_salt: "eVZV+zAN"]
 
 # Configures Elixir's Logger
 config :logger, :console,

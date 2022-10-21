@@ -1,0 +1,9 @@
+{
+    "skip_files": [
+        "lib/meals_monitor_web.ex",
+        "lib/meals_monitor/application.ex",
+        "lib/meals_monitor_web/channels/user_socket.ex",
+        "lib/meals_monitor_web/views/error_helpers.ex",
+        "test/support"
+    ]
+}

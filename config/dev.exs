@@ -1,10 +1,10 @@
 use Mix.Config
 
 # Configure your database
-config :exmeal, Exmeal.Repo,
+config :meals_monitor, MealsMonitor.Repo,
   username: "postgres",
   password: "postgres",
-  database: "exmeal_dev",
+  database: "meals_monitor_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -15,7 +15,7 @@ config :exmeal, Exmeal.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :exmeal, ExmealWeb.Endpoint,
+config :meals_monitor, MealsMonitorWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,

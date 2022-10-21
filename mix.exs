@@ -1,9 +1,9 @@
-defmodule Exmeal.MixProject do
+defmodule MealsMonitor.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :exmeal,
+      app: :meals_monitor,
       version: "0.1.0",
       elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -16,8 +16,7 @@ defmodule Exmeal.MixProject do
         coveralls: :test,
         "coveralls.detail": :test,
         "coveralls.post": :test,
-        "coveralls.html": :test,
-        "coveralls.json": :test
+        "coveralls.html": :test
       ]
     ]
   end
@@ -27,7 +26,7 @@ defmodule Exmeal.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Exmeal.Application, []},
+      mod: {MealsMonitor.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -45,6 +44,8 @@ defmodule Exmeal.MixProject do
       {:phoenix_ecto, "~> 4.1"},
       {:ecto_sql, "~> 3.4"},
       {:postgrex, ">= 0.0.0"},
+      {:phoenix_html, "~> 2.11"},
+      {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_dashboard, "~> 0.4"},
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~> 0.4"},
@@ -52,9 +53,9 @@ defmodule Exmeal.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
-      {:excoveralls, "~> 0.10", only: :test},
+      {:decimal, "~> 2.0"},
       {:ex_machina, "~> 2.7.0"},
-      {:json_response, git: "https://github.com/joaopealves/json_response"}
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 
@@ -66,7 +67,7 @@ defmodule Exmeal.MixProject do
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
     [
-      setup: ["deps.get", "ecto.setup"],
+      setup: ["deps.get", "ecto.setup", "cmd npm install --prefix assets"],
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"]
