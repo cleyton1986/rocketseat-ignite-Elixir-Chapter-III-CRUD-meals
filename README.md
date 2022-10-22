@@ -22,7 +22,7 @@
 
 </br>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/cleyton1986/rocketseat-ignite-desafio-01-elixir-reservas-de-voo?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/cleyton1986/rocketseat-ignite-Elixir-Chapter-III-CRUD-meals?color=%2304D361">
 
   <a href="https://www.linkedin.com/in/cleytonalves">
     <img alt="Made by Cleyton" src="https://img.shields.io/badge/Made%20by-Cleyton_Alves-Alves%2304D361">
@@ -30,8 +30,8 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/cleyton1986/rocketseat-ignite-desafio-01-elixir-reservas-de-voo/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/cleyton1986/rocketseat-ignite-desafio-01-elixir-reservas-de-voo?style=social">
+  <a href="https://github.com/cleyton1986/rocketseat-ignite-Elixir-Chapter-III-CRUD-meals/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/cleyton1986/rocketseat-ignite-Elixir-Chapter-III-CRUD-meals?style=social">
   </a>
 </p>
 
@@ -53,26 +53,14 @@
 
 ## Sobre o desafios
 
-- [Desafio - 01](https://www.notion.so/Desafio-01-Reservas-de-voos-f5fd8814ce904360b2500449143e589e)
-- [Desafio - 02](https://www.notion.so/Desafio-02-Relat-rio-de-reservas-de-voos-cd44db56fc0a432896c23475a21b8f29)
-- [Desafio - 03](https://www.notion.so/Desafio-03-Testando-a-aplica-o-723c200d933d41b598046078e462d822#9add5718b53f4e409a609597fb95d494)
+- [Desafio - 01](https://www.notion.so/Desafio-01-CRUD-Refei-es-di-rias-d2911dcc69ee444faea70eec7796546c)
+- [Desafio - 02](https://www.notion.so/Desafio-02-Testando-a-aplica-o-435756cc4daf4c9ba490c12642dc5154)
 
-Nesse desafio, você deverá criar uma aplicação de reserva de voos, onde haverá o cadastro de usuários e o cadastro de reservas para um usuário.
+Nesse desafio, você deverá criar uma aplicação para monitoramento de consumo de alimentos durante o dia.
 
-<aside>
-⚠️ É importante que todos os dados sejam salvos em um **Agent**, de acordo com o que foi visto no módulo.
-
-</aside>
+você deverá criar outros testes com o objetivo de completar 100% na cobertura excoveralls. Para isso, utilize a lib do excoveralls, adicione a dependência dele no seu mix.exs e essas configurações.
 
 Se quiser testar a sua implementação a partir do terminal, rode `iex -S mix` dentro do diretório raiz do projeto.
-
-</br>
-
-##  Download do arquivos
-
-  - [part_1.csv](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ef3f1650-5374-4430-bc33-e89b51ad949a/part_1.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221009%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221009T171439Z&X-Amz-Expires=86400&X-Amz-Signature=3a6ca573d89e80c776360553e7ee101df7fecd6f13e514d81aae6e4386c67f74&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22part_1.csv%22&x-id=GetObject)
-  - [part_2.csv](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/019635f0-d0ed-4b42-b69b-939d7492563c/part_2.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221009%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221009T171454Z&X-Amz-Expires=86400&X-Amz-Signature=acbba6d6829dc3db1e469e5a667aed0b7b7bca060406f468fb2b9cf426f5150c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22part_2.csv%22&x-id=GetObject)
-  - [part_3.csv](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4800edf6-8d81-4209-9841-b45a9d8fa951/part_3.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221009%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221009T171507Z&X-Amz-Expires=86400&X-Amz-Signature=941ef4e47d2d52cf08409c9d909ac93fde2472bdfdb9605b9f9571153a8cf413&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22part_3.csv%22&x-id=GetObject)
 
 </br>
 
@@ -82,58 +70,32 @@ Em cada teste, você encontrará uma breve descrição do que sua aplicação
 
 Para esse desafio, temos os seguintes testes:
 
-### Bookings:
+## **Exmeal:**
 
-<p>
-  🧪 (
-    <a href="https://www.notion.so/Testes-test-bookings-booking_agent_test-exs-f1aeba950bd244168d78120d802b14b5">test/bookings/booking_agent_test.exs</a>
-  )
-</p>
 
-<p>
-  🧪 (
-    <a href="https://www.notion.so/Testes-test-bookings-booking_test-exs-f438dcbbb5ca4f369678e15049aa6bc0">test/bookings/booking_test.exs</a>
-  )
-</p>
+🧪 ( [Teste test/meals/create_test.exs](https://www.notion.so/Teste-test-meals-create_test-exs-3ca5cd52d3d8442eb61fd47c6d9fd80f) )
 
-<p>
-  🧪 (
-    <a href="https://www.notion.so/Testes-test-bookings-create_or_update_test-exs-3cffdfc8a85d42c1823373bce2497592">test/bookings/create_or_update_test.exs</a>
-  )
-</p>
+🧪 ( [Teste test/meals/delete_test.exs](https://www.notion.so/Teste-test-meals-delete_test-exs-f57b4efbb87748eaabd11f67410f9ba0) )
 
-<p>
-  🧪 (
-    <a href="https://www.notion.so/Teste-test-bookings-report_test-exs-6d37d678415f48f186d5779a2bcf20f4">test/bookings/report_test.exs</a>
-  ) 👀 OBS.: Este teste não é obrigatório.
-</p>
+🧪 ( [Teste test/meals/get_test.exs](https://www.notion.so/Teste-test-meals-get_test-exs-9e6ae254555240278e08668f333249aa) )
 
-<p>
-  🧪 (
-    <a href="https://www.notion.so/Testes-test-bookings-create_or_update_test-exs-3cffdfc8a85d42c1823373bce2497592">test/bookings/create_or_update_test.exs</a>
-  )
-</p>
-</br>
+🧪 ( [Teste test/meals/update_test.exs](https://www.notion.so/Teste-test-meals-update_test-exs-45ac1a96c03b4a57901579f9667a1bed) )
 
-### Users:
+🧪 ( [Teste /test/exmeal_test.exs](https://www.notion.so/Teste-test-exmeal_test-exs-2b59a7dd54bf4c6584d3df55a53072ff) )
 
-<p>
-  🧪 (
-    <a href="https://www.notion.so/Teste-test-users-create_or_update_test-exs-e7c929008e7a491c9aeaa9ee36a12457">/test/users/create_or_update_test.exs</a>
-  )
-</p>
 
-<p>
-  🧪 (
-    <a href="https://www.notion.so/Teste-test-users-user_agent_test-exs-e1b36b62855540bc9573ceebe4bbc6ad">/test/users/user_agent_test.exs</a>
-  )
-</p>
 
-<p>
-  🧪 (
-    <a href="https://www.notion.so/Teste-test-users-users_test-exs-d1272b91269f4989ad4e919d302b140b">/test/users/users_test.exs</a>
-  )
-</p>
+## **ExmealWeb**
+
+
+### **Controller:**
+
+🧪 (  [Teste /test/exmeal_web/controller/meals_controller_test.exs](https://www.notion.so/Teste-test-exmeal_web-controller-meals_controller_test-exs-aee6b422d7d545a19933190db41d52e3) )
+
+### **View:**
+
+🧪 (  [Teste test/exmeal_web/view/meals_test.exs](https://www.notion.so/Teste-test-exmeal_web-view-meals_test-exs-85e834a00f2d442582bd646ba4b85f2a) )
+
 
 </br>
 
@@ -160,10 +122,10 @@ Esse desafio foi entregue na plataforma Skylab - Rocketseat.
 # OBS.: ANTES DE PROCEDIMENTO, CERTIFIQUE-SE QUE O ELIXIR ESTEJA INSTALADO NO SEU COMPUTADOR CORRETAMENTE.
 
 # Clone esse repositório
-$ git clone https://github.com/cleyton1986/rocketseat-ignite-desafio-01-elixir-reservas-de-voo
+$ git clone https://github.com/cleyton1986/rocketseat-ignite-Elixir-Chapter-III-CRUD-meals
 
 # Entre no diretório
-$ cd rocketseat-ignite-desafio-01-elixir-reservas-de-voo
+$ cd rocketseat-ignite-Elixir-Chapter-III-CRUD-meals
 
 # baixe as dependencias
 $ mix deps.get
